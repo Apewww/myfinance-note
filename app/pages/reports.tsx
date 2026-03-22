@@ -121,16 +121,6 @@ export function ReportsContent() {
                 </div>
               </div>
               <div className="bg-gradient-to-br from-indigo-600 to-violet-800 rounded-[32px] p-8 flex flex-col justify-between shadow-2xl shadow-indigo-500/10">
-                <div>
-                  <div className="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center mb-6">
-                    <BarChart3 className="w-6 h-6 text-white" />
-                  </div>
-                  <h4 className="text-xl font-black text-white mb-3">Savings Rate</h4>
-                  <p className="text-white/70 text-sm leading-relaxed font-medium">
-                    You've saved <span className="text-white font-bold">{Math.max(0, Math.round(((currentStats.income - currentStats.expense) / currentStats.income) * 100)) || 0}%</span> of your income this period.
-                    {currentStats.expense > currentStats.income ? ' Warning: You are spending more than you earn.' : ' Excellent! You are on track for your financial goals.'}
-                  </p>
-                </div>
                 <button className="mt-8 flex items-center justify-center gap-3 bg-white text-indigo-600 font-black py-4 rounded-2xl hover:scale-[1.02] active:scale-95 transition-all shadow-xl">
                   Full AI Audit
                   <ArrowRight className="w-5 h-5" />
