@@ -12,6 +12,7 @@ export default defineConfig({
     VitePWA({
       registerType: "autoUpdate",
       includeAssets: ["favicon.ico", "apple-touch-icon.png", "mask-icon.svg"],
+      filename: 'manifest.webmanifest',
       manifest: {
         name: "MyFinance",
         short_name: "MyFinance",
