@@ -120,12 +120,6 @@ export function ReportsContent() {
                   )) : <p className="text-white/20 italic text-sm text-center py-10">Accumulating data...</p>}
                 </div>
               </div>
-              <div className="bg-gradient-to-br from-indigo-600 to-violet-800 rounded-[32px] p-8 flex flex-col justify-between shadow-2xl shadow-indigo-500/10">
-                <button className="mt-8 flex items-center justify-center gap-3 bg-white text-indigo-600 font-black py-4 rounded-2xl hover:scale-[1.02] active:scale-95 transition-all shadow-xl">
-                  Full AI Audit
-                  <ArrowRight className="w-5 h-5" />
-                </button>
-              </div>
             </div>
           </div>
 
