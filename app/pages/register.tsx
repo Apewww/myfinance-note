@@ -26,7 +26,7 @@ export function RegisterContent() {
     try {
       await register(email, password);
       setSuccess(true);
-      setTimeout(() => navigate("/"), 3000);
+      setTimeout(() => navigate("/"), 1500);
     } catch (err: any) {
       setError(err.message || "Registration failed. Please try again.");
     } finally {
@@ -62,7 +62,7 @@ export function RegisterContent() {
                   <CheckCircle2 className="w-16 h-16 text-emerald-400" />
                 </div>
                 <h3 className="text-xl font-bold text-white">Registration Successful!</h3>
-                <p className="text-indigo-200">Check your email for confirmation. Redirecting to login...</p>
+                <p className="text-indigo-200">Welcome to MyFinance! Redirecting to login...</p>
               </motion.div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-5">
