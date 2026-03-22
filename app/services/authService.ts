@@ -13,6 +13,9 @@ export const register = async (email: string, password: string) => {
   const { data, error } = await supabase.auth.signUp({
     email,
     password,
+    options: {
+      emailRedirectTo: import.meta.env.VITE_SITE_URL || 'http://localhost:5173'
+    }
   });
   if (error) throw error;
   return data;
