@@ -1,87 +1,54 @@
-# Welcome to React Router!
+# MyFinance PWA
 
-A modern, production-ready template for building full-stack React applications using React Router.
+A premium, modern personal finance management application built with React, Tailwind CSS, and Supabase.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+![MyFinance Logo](public/pwa-192x192.png)
 
-## Features
+## 🌟 Features
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+- **PWA Ready**: Installable on mobile and desktop with offline support.
+- **Real-time Sync**: Powered by Supabase for seamless data updates.
+- **Premium Design**: Glassmorphism, smooth animations (Framer Motion), and dark mode.
+- **Financial Analytics**: In-depth reports with trend charts and category breakdowns.
+- **Localized Formatting**: Automatic thousand separators (IDR style) for easy input.
+- **Secure Auth**: Full login and registration flow with Supabase Auth.
 
-## Getting Started
+## 🚀 Tech Stack
 
-### Installation
+- **Framework**: React / React Router 7
+- **Backend**: Supabase (Auth, DB, RLS)
+- **Styling**: Tailwind CSS / DaisyUI
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Build Tool**: Vite
 
-Install the dependencies:
+## 🛠️ Setup Instructions
 
-```bash
-npm install
-```
+1. **Clone & Install**:
+   ```bash
+   git clone <your-repo-url>
+   cd myfinance-note
+   npm install
+   ```
 
-### Development
+2. **Supabase Config**:
+   - Create a project on [Supabase](https://supabase.com).
+   - Run the SQL from `supabase_setup.sql` in the SQL Editor.
+   - Set up environment variables in `.env` (use `.env.example` as a template).
 
-Start the development server with HMR:
+3. **Run Locally**:
+   ```bash
+   npm run dev
+   ```
 
-```bash
-npm run dev
-```
+## 📜 Credits
 
-Your application will be available at `http://localhost:5173`.
+This project was developed through a collaborative effort between:
 
-## Building for Production
+- **The User**: VisionARY, UI/UX feedback, and project requirements.
+- **Antigravity (AI Agent)**: Lead developer, architect, and coding assistant.
+- **Google Gemini**: The underlying Large Language Model (LLM) powering the assistant.
 
-Create a production build:
+## 📄 Documentation
 
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
+For more detailed information, visit the **Documentation** page directly within the application.

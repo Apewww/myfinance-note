@@ -11,7 +11,8 @@ import {
   Menu, 
   X,
   Wallet,
-  BarChart3
+  BarChart3,
+  HelpCircle
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "../utils/cn";
@@ -39,6 +40,7 @@ export function DashboardLayout({ children }: { children: React.ReactNode }) {
     { name: "Reports", href: "/reports", icon: BarChart3 },
     { name: "Categories", href: "/categories", icon: Tags },
     { name: "Profile", href: "/profile", icon: User },
+    { name: "Documentation", href: "/docs", icon: HelpCircle },
   ];
 
   return (

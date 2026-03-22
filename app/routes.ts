@@ -21,5 +21,6 @@ export default [
     route("transactions", "routes/transactions.tsx"),
     route("categories", "routes/categories.tsx"),
     route("profile", "routes/profile.tsx"),
-    route("reports", "routes/reports.tsx")
+    route("reports", "routes/reports.tsx"),
+    route("docs", "routes/docs.tsx")
 ] satisfies RouteConfig;
