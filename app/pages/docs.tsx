@@ -31,7 +31,7 @@ export default function DocumentationPage() {
     <DashboardLayout>
       <div className="max-w-4xl mx-auto space-y-16 pb-20">
         <div className="text-center space-y-4">
-          <motion.div 
+          <motion.div
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             className="inline-flex items-center gap-2 px-4 py-2 bg-cyan-500/10 border border-cyan-500/20 rounded-full text-cyan-400 text-sm font-bold tracking-widest uppercase mb-4"
@@ -51,11 +51,11 @@ export default function DocumentationPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-[#0a0a0a] border border-white/5 rounded-3xl p-8 space-y-4">
               <h3 className="text-lg font-bold text-white">Frontend Core</h3>
-              <p className="text-white/50 text-sm leading-relaxed">Built with **React Router 7 (Vite)**, focusing on a Single Page Application (SPA) experience with SSR capabilities. The UI uses **Tailwind CSS** and **DaisyUI** for a premium glassmorphic feel.</p>
+              <p className="text-white/50 text-sm leading-relaxed">Built with <b>React Router 7 (Vite)</b>, focusing on a Single Page Application (SPA) experience with SSR capabilities. The UI uses <b>Tailwind CSS</b> and <b>DaisyUI</b> for a premium glassmorphic feel.</p>
             </div>
             <div className="bg-[#0a0a0a] border border-white/5 rounded-3xl p-8 space-y-4">
               <h3 className="text-lg font-bold text-white">Backend (Supabase)</h3>
-              <p className="text-white/50 text-sm leading-relaxed">Leverages **PostgreSQL** with **Row Level Security (RLS)** to ensure data privacy. Transactions and categories are managed in real-time through the Supabase Client SDK.</p>
+              <p className="text-white/50 text-sm leading-relaxed">Leverages <b>PostgreSQL</b> with <b>Row Level Security (RLS)</b> to ensure data privacy. Transactions and categories are managed in real-time through the Supabase Client SDK.</p>
             </div>
           </div>
         </section>
@@ -67,7 +67,7 @@ export default function DocumentationPage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {credits.map((c, i) => (
-              <motion.div 
+              <motion.div
                 key={c.name}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -92,7 +92,7 @@ export default function DocumentationPage() {
           </div>
           <h2 className="text-3xl font-black text-white">Iterative Development</h2>
           <p className="text-white/60 max-w-2xl mx-auto leading-relaxed">
-            This project is a testament to the power of pair programming between humans and AI. 
+            This project is a testament to the power of pair programming between humans and AI.
             Through many iterations of refactoring, UI enhancements, and feature implementation, we have built a fully functional PWA that rivals professional fintech applications.
           </p>
         </section>
