@@ -11,13 +11,14 @@ export default defineConfig({
     tsconfigPaths(),
     VitePWA({
       registerType: "autoUpdate",
+      injectRegister: 'script',
       includeAssets: ["favicon.ico", "apple-touch-icon.png", "mask-icon.svg"],
-      filename: 'manifest.webmanifest',
       manifest: {
         name: "MyFinance",
         short_name: "MyFinance",
         description: "Personal Finance Management App",
-        theme_color: "#ffffff",
+        theme_color: "#0a0a0a",
+        background_color: "#0a0a0a",
         icons: [
           {
             src: "pwa-192x192.png",
