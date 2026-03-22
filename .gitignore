@@ -4,3 +4,9 @@
 # React Router
 /.react-router/
 /build/
+.env
+.env.local
+.env.*.local
+dist
+.vercel
+.env
